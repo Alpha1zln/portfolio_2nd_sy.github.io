@@ -21,17 +21,20 @@ body {
 /* Header Navbar Styles */
 .navbar { 
 	display: flex; 
+	/* flex-wrap: wrap;         /* ADD THIS */ 
 	align-items: center; 
 	justify-content: space-between; 
 	position: fixed; 
 	top: 0; 
-	/* margin-bottom: 10%; */
+	/* margin-bottom: 1rem; */
 	width: 100%; 
 	z-index: 1000;
 	background-image: linear-gradient(90deg, #841460, #1b5e4f, #8f0b8b); 
 	background-color: transparent; 
 	box-sizing: border-box;
 } 
+
+
 
 .logo { 
 	padding: 0 5rem; 
@@ -70,6 +73,8 @@ body {
 	} 
 } 
 
+
+
 /* Main Hero Section Styles */
 .hero { 
 	background-image: url('./Images/heroImg3.avif'); 
@@ -80,9 +85,10 @@ body {
 	display: flex; 
 	align-items: center; 
 	justify-content: start; 
-	margin: 1rem 0; 
+	/* margin: 1rem 0;  */
 	padding: 0rem 0rem 0rem 8rem;
 	background: linear-gradient(to bottom right, #8d2293, #beaa67); /* deep blue-green */
+	/* margin-top: 1rem; */
 	margin-bottom: 2rem;
 } 
 
@@ -127,6 +133,14 @@ body {
 	
 	margin-bottom: 2rem;
 } 
+
+/*slider*/
+.swiper {
+	width: 100%;
+	padding: 40px 0;
+  }
+  
+
 
 /* Portfolio section styles */
 .portfolio { 
@@ -180,23 +194,69 @@ body {
 	margin-bottom: 2rem;
   }
 
-  .project-box, .certification-box {
+  .project-box {
 	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 1.5rem;
+	padding: 1rem;
+	scroll-padding: 1rem;
+	text-decoration:solid ;
+	font-size: large;
+	/* justify-content: space-between; */
+	/* margin-top: 2rem; */
+  }
+
+   .certification-box {
+	display: flex;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	gap: 1.5rem;
+	padding: 1rem;
+	scroll-padding: 1rem;
+	text-decoration:solid ;
+	font-size: large;
+	/* display: flex;
 	flex-wrap: wrap;
 	text-decoration:solid ;
 	font-size: large;
 	justify-content: space-between;
 	gap: 2rem;
-	margin-top: 2rem;
+	margin-top: 2rem; */
   }
   
-  .project-card, .cert-card {
+  .project-card {
+	background-color: #6c5ce7;
+	text-decoration:solid ;
+	font-weight: light bold;
+	font-size: large;
+	border-radius: 25px;
+	width: 40%;
+
+	flex: 0 0 45%;
+	scroll-snap-align: start;
+	min-width: 100px;
+
+	min-height: 200px;
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(133, 60, 145, 0.2);
+	position: relative;
+	text-align: center;
+  }
+
+  .cert-card {
 	background-color: #6c5ce7;
 	width: 40%;
 	text-decoration:solid ;
 	font-weight: light bold;
 	font-size: large;
-	min-height: 400px;
+
+	flex: 0 0 45%;
+	scroll-snap-align: start;
+	min-width: 100px;
+
+	min-height: 200px;
 	padding: 1.5rem;
 	border-radius: 15px;
 	box-shadow: 0 4px 15px rgba(133, 60, 145, 0.2);
