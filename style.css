@@ -1,6 +1,10 @@
 /* Styles defined for the desktop or the bigger screen devices*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
+section {
+	scroll-margin-top: 80px; /* or height of your navbar */
+  }
+
 body { 
 	margin: 0; 
 	padding-top: 80px; /* adjust based on nav height */
