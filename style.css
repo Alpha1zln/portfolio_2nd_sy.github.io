@@ -1,6 +1,12 @@
 /* Styles defined for the desktop or the bigger screen devices*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); 
 
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  }
+
 section {
 	scroll-margin-top: 80px; /* or height of your navbar */
   }
@@ -24,6 +30,7 @@ body {
 	z-index: 1000;
 	background-image: linear-gradient(90deg, #841460, #1b5e4f, #8f0b8b); 
 	background-color: transparent; 
+	box-sizing: border-box;
 } 
 
 .logo { 
