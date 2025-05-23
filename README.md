@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# MY-PORTFOLIO-WEBSITE-SY - 2024
+# MY-PORTFOLIO-WEBSITE 2nd-SY - 2025
 
-https://alpha1zln.github.io/
+
 =======
 # portfolio_2nd_sy
 2nd portfolio, using HTML, CSS, JS
