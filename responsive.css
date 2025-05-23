@@ -61,7 +61,10 @@
 	.hero { 
 		justify-content: center; 
 		color: #fff; 
-		background-image: radial-gradient(circle, rgb(15 14 14 / 30%), rgb(102 96 96 / 40%), rgb(163 160 160 / 16%)), url('./Images/heroImg3.avif') 
+		background-image: radial-gradient(circle, rgb(15 14 14 / 30%), rgb(102 96 96 / 40%), rgb(163 160 160 / 16%)), url('./Images/heroImg3.avif') ;
+		padding: 1rem 2rem;
+		background: linear-gradient(to bottom right, #8d2293, #beaa67); /* deep blue-green */
+		margin-bottom: 1rem;
 	} 
 
 	.sub-heading { 
@@ -102,7 +105,10 @@
 	.portfolio { 
 		padding: 0; 
 		margin-left: 1rem; /* Add margin to the left side */
-        	margin-right: 1rem; /* Add margin to the right side */
+        margin-right: 1rem; /* Add margin to the right side */
+		padding: 1rem 2rem; 
+		background: linear-gradient(to bottom right, #d186b7, #78e16b); /* deep blue-green */
+		margin-bottom: 1rem;
 	} 
 
 	.about { 
@@ -131,6 +137,28 @@
         margin-right: 1rem; /* Add margin to the right side */    
     } 
   
+	/* Project and Certification Section Styles */
+	.projects-section{
+		padding: 1rem 2rem;
+		background: linear-gradient(45deg, #6337c3, #185a58); /* light box look */
+		margin-bottom: 1rem;
+	}
+	
+	.certification-section {
+		padding: 1rem 2rem;
+		background: linear-gradient(to bottom right, #34422e, #a6138b); /* deep blue-green */
+		margin-bottom: 1rem;
+	}
+
+	.project-box, .certification-box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 1rem;
+		margin-top: 1rem;
+	  }
+
+
     .my-row { 
         display: flex; 
         align-items: center; 
@@ -149,7 +177,16 @@
 
 	.contact { 
 		padding: 0; 
+		padding: 1rem 2rem;
+		background: linear-gradient(45deg, #8f798f, #91b492); /* light box look */
+		margin-bottom: 1rem;
 	} 
+
+
+	#portfolio, #services, #projects, #certifications, #about, #contact {
+		scroll-margin-top: 80px;
+	  }
+	
 
 	.contact-content { 
 		flex-direction: column; 

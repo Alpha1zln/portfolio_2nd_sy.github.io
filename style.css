@@ -3,7 +3,7 @@
 
 body { 
 	margin: 0; 
-	padding: 0; 
+	padding-top: 80px; /* adjust based on nav height */
 	box-sizing: border-box; 
 	font-family: 'Poppins', sans-serif; 
 } 
@@ -15,7 +15,9 @@ body {
 	justify-content: space-between; 
 	position: fixed; 
 	top: 0; 
+	/* margin-bottom: 10%; */
 	width: 100%; 
+	z-index: 1000;
 	background-image: linear-gradient(90deg, #841460, #1b5e4f, #8f0b8b); 
 	background-color: transparent; 
 } 
@@ -67,8 +69,15 @@ body {
 	display: flex; 
 	align-items: center; 
 	justify-content: start; 
-	margin: 4.8rem 0; 
+	margin: 1rem 0; 
+	padding: 0rem 0rem 0rem 8rem;
+	background: linear-gradient(to bottom right, #8d2293, #beaa67); /* deep blue-green */
+	margin-bottom: 2rem;
 } 
+
+.about {
+	margin-bottom: 2rem;
+}
 
 .hero .intro { 
 	text-align: center; 
@@ -81,6 +90,8 @@ body {
 	align-items: center; 
 	justify-content: space-evenly; 
 } 
+
+
 
 /* About section styles */
 .about { 
@@ -95,18 +106,24 @@ body {
 	width: 450px; 
 	color: #fff; 
 	padding: 5rem 1rem 5rem 5rem; 
+	margin-left: 5rem;
 } 
 
 .about .about-image img { 
 	height: 400px; 
 	width: 450px; 
 	padding: 5rem 5rem 5rem 1rem; 
+	
+	margin-bottom: 2rem;
 } 
 
 /* Portfolio section styles */
 .portfolio { 
 	margin: 4.8rem 0; 
 	padding: 0 5rem; 
+	padding: 4rem 5rem;
+	background: linear-gradient(to bottom right, #d186b7, #78e16b); /* deep blue-green */
+	margin-bottom: 2rem;
 } 
 
 .port-card { 
@@ -134,7 +151,117 @@ body {
 	flex-direction: column; 
 	margin: 4.8rem 0; 
 	padding: 0 5rem; 
+	padding: 4rem 5rem;
+	background: linear-gradient(to bottom right, #32c2e3, #501c58); /* deep blue-green */
+	margin-bottom: 2rem;
 } 
+
+/* Project and Certification Section Styles */
+.projects-section{
+	padding: 4rem 5rem;
+	background: linear-gradient(45deg, #6337c3, #185a58); /* light box look */
+	margin-bottom: 2rem;
+  }
+  
+  .certification-section {
+	padding: 4rem 5rem;
+	background: linear-gradient(to bottom right, #34422e, #a6138b); /* deep blue-green */
+	margin-bottom: 2rem;
+  }
+
+  .project-box, .certification-box {
+	display: flex;
+	flex-wrap: wrap;
+	text-decoration:solid ;
+	font-size: large;
+	justify-content: space-between;
+	gap: 2rem;
+	margin-top: 2rem;
+  }
+  
+  .project-card, .cert-card {
+	background-color: #6c5ce7;
+	width: 40%;
+	text-decoration:solid ;
+	font-weight: light bold;
+	font-size: large;
+	min-height: 400px;
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(133, 60, 145, 0.2);
+	position: relative;
+	text-align: center;
+  }
+  
+     .cert-card {
+	background-color: #e17055;
+	width: 40%;
+	min-height: 250px;
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(82, 135, 93, 0.2);
+	position: relative;
+	text-align: center;
+  }
+
+
+  .project-card h3, .cert-card h3 {
+	color: #000000;
+	font-weight: bold;
+  }
+
+  /* .project-card {
+	width: 30%;
+	min-height: 250px;
+	padding: 1.5rem;
+	border-radius: 15px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+	position: relative;
+	text-align: center;
+	color: white;
+  }
+  
+  .project-card:nth-child(1) {
+	background-color: #ff6f61;
+  }
+  
+  .project-card:nth-child(2) {
+	background-color: #6c5ce7;
+  }
+  
+  .project-card:nth-child(3) {
+	background-color: #00b894;
+  }
+  
+  .project-card:nth-child(4) {
+	background-color: #0984e3;
+  }
+  
+  .project-card:nth-child(5) {
+	background-color: #fd79a8;
+  }
+  
+  .project-card:nth-child(6) {
+	background-color: #e17055;
+  }
+   */
+  
+  .icon-img {
+	height: 30px;
+	width: 30px;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+  }
+  
+  .project-link:hover .icon-img,
+  .cert-link:hover .icon-img {
+	transform: scale(1.1);
+	transition: 0.2s ease-in-out;
+  }
+  
+
+
 
 .my-row { 
 	display: flex; 
@@ -176,13 +303,26 @@ body {
 
 /* Contact section styles */
 .contact { 
-	padding: 0 5rem; 
+	/* padding: 0 5rem;  */
+	padding: 4rem 5rem  5rem  5rem;
+	background: linear-gradient(45deg, #8f798f, #91b492); /* light box look */
+	margin-bottom: 4rem;
+	
 } 
+
+
+#portfolio, #services, #projects, #certifications, #about, #contact {
+	scroll-margin-top: 80px;
+  }
+
 
 .contact-content { 
 	display: flex; 
-	margin: 3rem 0; 
-	justify-content: space-between; 
+	margin: 4rem 4rem 4rem 4rem ; 
+	/* justify-content: space-between;  */
+	/* gap: 3rem; Add this for space between columns */
+	padding-right: 10 rem;
+
 } 
 
 .contact-form-container { 
@@ -197,7 +337,7 @@ body {
 .contact-form .form-controls { 
 	width: 80%; 
 	padding: 10px 0; 
-	margin: 1.67rem 0; 
+	margin: 0.5rem 0; 
 } 
 
 .contact-form .form-btn { 
@@ -206,6 +346,7 @@ body {
 
 .contact-details { 
 	width: 50%; 
+	margin-left: 8rem; /* Pushes it slightly to the right */
 } 
 
 /* Footer Styles */
