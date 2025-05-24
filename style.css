@@ -5,6 +5,12 @@ html, body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
+	line-height: 1.6;
+	font-size: 100%;
+  }
+
+  * {
+	box-sizing: border-box;
   }
 
 section {
@@ -89,6 +95,7 @@ body {
 	padding: 0rem 0rem 0rem 8rem;
 	background: linear-gradient(to bottom right, #8d2293, #beaa67); /* deep blue-green */
 	/* margin-top: 1rem; */
+	padding-top: 80px;
 	margin-bottom: 2rem;
 } 
 
@@ -233,7 +240,7 @@ body {
 	border-radius: 25px;
 	width: 40%;
 
-	flex: 0 0 45%;
+	flex: 0 0 48%;
 	scroll-snap-align: start;
 	min-width: 100px;
 
@@ -252,7 +259,7 @@ body {
 	font-weight: light bold;
 	font-size: large;
 
-	flex: 0 0 45%;
+	flex: 0 0 48%;
 	scroll-snap-align: start;
 	min-width: 100px;
 
